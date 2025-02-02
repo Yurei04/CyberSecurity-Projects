@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="password-container">
@@ -12,13 +13,16 @@
 
         </div>
         <div class="controls">
-            <label><input type="checkbox" name="upper" id="uppercase"></label>
-            <label><input type="checkbox" name="lower" id="lowercase"></label>
-            <label><input type="checkbox" name="number" id="numbers"></label>
-            <label><input type="checkbox" name="special" id="special"></label>
+            <label>UpperCase Letters<input type="checkbox" name="upper" id="uppercase"></label>
+            <label>LowerCase Letters<input type="checkbox" name="lower" id="lowercase"></label>
+            <label>Numbers<input type="checkbox" name="number" id="numbers"></label>
+            <label>Special Characters<input type="checkbox" name="special" id="special"></label>
+            <p>Password Length: <span id="lengthDisplay">10</span></p>
             <input type="range" max="20" min="5" value="5" name="length" id="length">
             <button type="button" id="generate">Generate Random Password</button>
         </div>
     </div>
+
+    <script src="./index.js"></script>
 </body>
 </html>
